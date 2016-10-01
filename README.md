@@ -21,6 +21,11 @@ validator(s)'s automated checks and a human's check.
 
 
 ##### To Do:
+- FOLLOWING DONE IN:
+  - index.html
+  - survey.html
+  - tour.html
+----
 - LANGUAGE
   - Specify lang w/ lang attr in html tag
 - DESIGN
