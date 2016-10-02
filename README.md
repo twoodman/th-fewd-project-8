@@ -26,7 +26,8 @@ validator(s)'s automated checks and a human's check.
   - survey.html
   - tour.html
 ----
-- LANGUAGE
+- ✔️ REFACTOR CSS TO SASS
+- ✔️ LANGUAGE
   - Specify lang w/ lang attr in html tag
 - DESIGN
   - Foreground / background text have [sufficient contrast](http://leaverou.github.com/contrast-ratio/)
