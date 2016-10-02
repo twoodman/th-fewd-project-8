@@ -1,0 +1,15 @@
+@import 'base/variables';
+pre {
+  font-family: $open-stack;
+}
+
+.heading {
+  display: inline-block;
+  margin: 0;
+}
+
+.pick {
+  width: 40px;
+  height: 0%;
+  padding: 10px;
+}

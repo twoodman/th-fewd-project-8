@@ -1,0 +1,70 @@
+.tag {
+  color: black;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+
+.name {
+  font-weight: 300;
+}
+
+.tagline {
+  font-weight: 600;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #781125
+}
+
+.card {
+  @include query-840 {
+    margin: 40px auto;
+    padding: 20px 40px 40px;
+    width: 80%;
+    max-width: 1000px;
+  }
+  margin: 30px;
+  padding: 20px 40px 40px;
+  text-align: left;
+  border-top: 4px solid #781125;
+  clear: both;
+  &:hover {
+    border-color: #96731A;
+  }
+}
+
+.photo {
+  @include query-840 {
+    width: 30%;
+    margin: 20px 30px;
+  }
+  display: block;
+  width: 200px;
+  height: 0%;
+  margin: 0 auto;
+}
+
+.information {
+  @include query-840 {
+    text-align: left;
+  }
+  width: 100%;
+  text-align: center;
+  /*display: inline-block;
+  position: absolute;*/
+}
+
+.heading {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #781125;
+  margin-top: 10px;
+}
+
+.flex {
+  @include query-840 {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+  }
+}

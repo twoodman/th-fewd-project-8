@@ -1,0 +1,7 @@
+main {
+  @include query-840 {
+    padding-top: 20px;
+    p {
+      line-height: 1.6em;
+    }
+}

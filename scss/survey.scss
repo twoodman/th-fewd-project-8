@@ -1,0 +1,22 @@
+@import 'base/index';
+.photo {
+  @include query-840 {
+    width: 40%;
+  }
+  width: 60%;
+  padding: 10px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.container {
+  text-align: center;
+}
+
+.newsletter {
+  text-align: right;
+}
