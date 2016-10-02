@@ -12,7 +12,7 @@
   font-weight: 600;
   padding: 20px;
   text-transform: uppercase;
-  color: #781125
+  color: $color-alt-text;
 }
 
 .card {
@@ -25,14 +25,26 @@
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
-  border-top: 4px solid #781125;
+  border-top: 4px solid $color-alt-text;
   clear: both;
   &:hover {
-    border-color: #96731A;
+    border-color: $color-text;
+  }
+  p {
+    padding: 10px 0 10px 0;
+  }
+  a {
+    display: inline-block;
+    padding: 10px 0 10px 0;
+    color: $color-alt-text;
+    &:hover {
+      color: $color-text;
+    }
   }
 }
 
 .photo {
+  @include single-box-shadow(0,0,20px,0,$color-black);
   @include query-840 {
     width: 30%;
     margin: 20px 30px;
@@ -49,14 +61,12 @@
   }
   width: 100%;
   text-align: center;
-  /*display: inline-block;
-  position: absolute;*/
 }
 
 .heading {
   font-size: 2em;
   text-transform: uppercase;
-  color: #781125;
+  color: $color-alt-text;
   margin-top: 10px;
 }
 

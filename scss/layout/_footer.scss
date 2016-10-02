@@ -12,6 +12,7 @@ footer {
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  padding-top: 10px;
 }
 
 footer ul {
@@ -25,13 +26,14 @@ footer ul li {
 }
 
 a.social {
+  @include single-transition(all, 500ms);
   display: inline-block;
   margin-left: 5px;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   background-size: 30px 30px;
   opacity: .4;
-  transition: all .5s;
 }
 
 a.twitter {

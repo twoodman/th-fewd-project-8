@@ -23,7 +23,7 @@
 .nav .name {
   display: block;
   margin-right: auto;
-  color: white;
+  color: $color-alt-text;
   letter-spacing: 5px;
 }
 
@@ -32,9 +32,11 @@
 }
 
 .nav a {
-  transition: all .5s;
+  @include single-transition(all, 500ms);
+  color: $color-alt-text;
+  cursor: pointer;
 }
 
 .nav a:hover {
-  color: white
+  color: $color-text;
 }

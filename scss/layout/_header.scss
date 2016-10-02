@@ -1,4 +1,9 @@
 header {
+  @include display-flex();
+  @include flex-wrap(nowrap);
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
   @include query-840 {
     min-height: 470px;
   }
@@ -6,6 +11,21 @@ header {
   background: url('../img/concert02_no_text.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
   height: 350px;
+  h1 {
+    font-family: $montserrat-stack;
+    font-size: $base-font-size + 42;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    color: $color-body-bg;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  h2 {
+    @extend h1;
+    font-size: $base-font-size + 14;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: $color-body-bg;
+  }
 }

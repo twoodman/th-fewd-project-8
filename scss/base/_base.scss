@@ -9,26 +9,10 @@ body {
   font-size: $base-font-size;
   text-align: center;
   font-family: $open-stack;
-  color: $color-body-text;
+  color: $color-text;
   background: $color-body-bg;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: $color-body-text;
-  background: $color-body-bg;
-}
-
-/* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
-}
-
-a:hover {
-  color: #999;
 }

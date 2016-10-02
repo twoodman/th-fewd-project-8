@@ -1,5 +1,6 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1,
+header h2, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -16,63 +17,62 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 html {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 caption, th, td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 q, blockquote {
-  quotes: none; }
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none; }
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
 
 a img {
-  border: none; }
+  border: none;
+}
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block; }
+  display: block;
+}
 
 html, body {
   min-height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   font-size: 16px;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  background: #2d2b30; }
+  background: #2d2b30;
+}
 
-body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: #ffffff;
-  background: #2d2b30; }
-
-/* Link Styles */
 a {
   text-decoration: none;
-  color: #999; }
-
-a:hover {
-  color: #999; }
+}
 
 .main-nav {
   width: 100%;
@@ -80,7 +80,8 @@ a:hover {
   min-height: 30px;
   padding: 10px;
   position: fixed;
-  text-align: center; }
+  text-align: center;
+}
 
 .nav {
   display: flex;
@@ -88,23 +89,235 @@ a:hover {
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
-  padding: 0; }
-  @media (min-width: 840px) {
-    .nav {
-      max-width: 1200px;
-      padding: 0 30px; } }
+  padding: 0;
+}
+@media (min-width: 840px) {
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+}
 
 .nav .name {
   display: block;
   margin-right: auto;
-  color: white;
-  letter-spacing: 5px; }
+  color: #2abb9b;
+  letter-spacing: 5px;
+}
 
 .nav li {
-  padding: 5px 10px 10px 10px; }
+  padding: 5px 10px 10px 10px;
+}
 
 .nav a {
-  transition: all .5s; }
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  color: #2abb9b;
+  cursor: pointer;
+}
 
 .nav a:hover {
-  color: white; }
+  color: #ffffff;
+}
+
+header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+  background: url("../img/concert02_no_text.jpg") no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  height: 350px;
+}
+@media (min-width: 840px) {
+  header {
+    min-height: 470px;
+  }
+}
+header h1, header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 58px;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: #2d2b30;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+header h2 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: #2d2b30;
+}
+
+@media (min-width: 840px) {
+  main {
+    padding-top: 20px;
+  }
+  main p {
+    line-height: 1.6em;
+  }
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+@media (min-width: 840px) {
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+  padding-top: 10px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  display: inline-block;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-size: 30px 30px;
+  opacity: .4;
+}
+
+a.twitter {
+  background-image: url(../img/twitter-32.png);
+}
+
+a.youtube {
+  background-image: url(../img/youtube-32.png);
+}
+
+a.spotify {
+  background-image: url(../img/spotify-32.png);
+}
+
+a.social:hover {
+  opacity: 1;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.tag {
+  color: black;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+
+.name {
+  font-weight: 300;
+}
+
+.tagline {
+  font-weight: 600;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #2abb9b;
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  text-align: left;
+  border-top: 4px solid #2abb9b;
+  clear: both;
+}
+@media (min-width: 840px) {
+  .card {
+    margin: 40px auto;
+    padding: 20px 40px 40px;
+    width: 80%;
+    max-width: 1000px;
+  }
+}
+.card:hover {
+  border-color: #ffffff;
+}
+.card p {
+  padding: 10px 0 10px 0;
+}
+.card a {
+  display: inline-block;
+  padding: 10px 0 10px 0;
+  color: #2abb9b;
+}
+.card a:hover {
+  color: #ffffff;
+}
+
+.photo {
+  -moz-box-shadow: 0 0 20px 0 #000000;
+  -webkit-box-shadow: 0 0 20px 0 #000000;
+  box-shadow: 0 0 20px 0 #000000;
+  display: block;
+  width: 200px;
+  height: 0%;
+  margin: 0 auto;
+}
+@media (min-width: 840px) {
+  .photo {
+    width: 30%;
+    margin: 20px 30px;
+  }
+}
+
+.information {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 840px) {
+  .information {
+    text-align: left;
+  }
+}
+
+.heading {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #2abb9b;
+  margin-top: 10px;
+}
+
+@media (min-width: 840px) {
+  .flex {
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+  }
+}
