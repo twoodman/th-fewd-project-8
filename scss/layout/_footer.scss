@@ -7,50 +7,32 @@ footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
-}
-
-footer .copyright {
-  top: -8px;
-  font-size: .75em;
-  padding-top: 10px;
-}
-
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer ul li {
-  display: inline-block;
-}
-
-a.social {
-  @include single-transition(all, 500ms);
-  display: inline-block;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  background-size: 30px 30px;
-  opacity: .4;
-}
-
-a.twitter {
-  background-image: url(../img/twitter-32.png);
-}
-
-a.youtube {
-  background-image: url(../img/youtube-32.png);
-}
-
-a.spotify {
-  background-image: url(../img/spotify-32.png);
-}
-
-a.social:hover {
-  opacity: 1;
-}
-.clearfix {
-  clear: both;
+  .copyright {
+    top: -8px;
+    font-size: .75em;
+    padding-top: 10px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+    }
+  }
+  a.social {
+    @include single-transition(all, 500ms);
+    display: inline-block;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: .4;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .clearfix {
+    clear: both;
+  }
 }

@@ -1,14 +1,21 @@
-pre {
-  font-family: "Open Sans", sans-serif;
-}
-
-.heading {
-  display: inline-block;
-  margin: 0;
-}
-
 .pick {
   width: 40px;
   height: 0%;
   padding: 10px;
+}
+
+table {
+  text-align: right;
+  margin-left: 20px;
+}
+table tr {
+  padding: 0 10px 0 10px;
+}
+table tr th {
+  padding: 5px 10px 10px 0;
+  text-decoration: underline;
+  color: #2abb9b;
+}
+table tr td {
+  padding: 5px 20px 5px 0;
 }

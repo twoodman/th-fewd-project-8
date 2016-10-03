@@ -1,4 +1,4 @@
-.main-nav {
+nav {
   width: 100%;
   background: rgba(45, 43, 48, 0.8);
   min-height: 30px;
@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-.nav {
+.nav-list {
   @include query-840 {
     max-width: 1200px;
     padding: 0 30px;
@@ -18,25 +18,21 @@
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-}
-
-.nav .name {
-  display: block;
-  margin-right: auto;
-  color: $color-alt-text;
-  letter-spacing: 5px;
-}
-
-.nav li {
-  padding: 5px 10px 10px 10px;
-}
-
-.nav a {
-  @include single-transition(all, 500ms);
-  color: $color-alt-text;
-  cursor: pointer;
-}
-
-.nav a:hover {
-  color: $color-text;
+  .name {
+    display: block;
+    margin-right: auto;
+    color: $color-alt-text;
+    letter-spacing: 5px;
+  }
+  li {
+    padding: 5px 10px 10px 10px;
+  }
+  a {
+    @include single-transition(all, 500ms);
+    color: $color-alt-text;
+    cursor: pointer;
+    &:hover {
+      color: $color-text;
+    }
+  }
 }

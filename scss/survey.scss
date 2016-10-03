@@ -1,4 +1,5 @@
 @import 'base/index';
+
 .photo {
   @include query-840 {
     width: 40%;
@@ -7,16 +8,33 @@
   margin: 10px;
 }
 
-form {
-  margin: -5px auto 0 20px;
-  text-align: left;
-  display: inline-block;
-}
-
 .container {
   text-align: center;
 }
 
-.newsletter {
-  text-align: right;
+form {
+  margin: -5px auto 0 20px;
+  text-align: left;
+  display: inline-block;
+  fieldset {
+    margin: 20px 0 20px 0;
+    &:first-child {
+      margin: 0 0 20px 0;
+    }
+  }
+  label {
+    display: block;
+    padding: 10px 0 10px 0;
+    &.favourite-radio {
+      display: inline-block;
+    }
+  }
+  input,
+  textarea,
+  select {
+    &:focus {
+      border: 2px solid $color-alt-text;
+      background: $color-link;
+    }
+  }
 }

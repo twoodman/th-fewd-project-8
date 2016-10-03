@@ -14,7 +14,26 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 2px solid #2abb9b;
+}
+
+h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #2abb9b;
+  margin-top: 20px;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .photo {
@@ -27,16 +46,31 @@ a {
   }
 }
 
+.container {
+  text-align: center;
+}
+
 form {
   margin: -5px auto 0 20px;
   text-align: left;
   display: inline-block;
 }
-
-.container {
-  text-align: center;
+form fieldset {
+  margin: 20px 0 20px 0;
 }
-
-.newsletter {
-  text-align: right;
+form fieldset:first-child {
+  margin: 0 0 20px 0;
+}
+form label {
+  display: block;
+  padding: 10px 0 10px 0;
+}
+form label.favourite-radio {
+  display: inline-block;
+}
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border: 2px solid #2abb9b;
+  background: #ffa400;
 }

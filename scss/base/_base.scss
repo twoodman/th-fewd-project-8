@@ -14,5 +14,15 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  &:focus {
+    outline: 2px solid $color-alt-text;
+  }
+}
+
+h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: $color-alt-text;
+  margin-top: 20px;
 }
