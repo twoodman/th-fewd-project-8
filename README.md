@@ -27,7 +27,11 @@ Safari 10 on Mac OS Sierra
   - ✔️ index.html
   - ✔️ survey.html
   - ✔️ tour.html
+
+
 ----
+
+
 - ✔️ REFACTOR CSS TO SASS
 - ✔️ LANGUAGE
   - Specify lang w/ lang attr in html tag
